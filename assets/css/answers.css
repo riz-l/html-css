@@ -1,0 +1,92 @@
+/*#region Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  margin: 1rem;
+}
+
+p {
+  font-size: 2rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+/*#endregion /Reset */
+
+/*#region Flex  */
+.flex-container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 50vh;
+  min-height: 50vh;
+  margin: 1rem 0;
+  width: 100%;
+}
+
+.flex-first {
+  align-items: center;
+  background: rebeccapurple;
+  display: flex;
+  flex: 1;
+  height: 100%;
+  justify-content: center;
+  width: 100%;
+}
+
+.flex-second {
+  align-items: center;
+  background: cornflowerblue;
+  display: flex;
+  flex: 1;
+  height: 100%;
+  justify-content: center;
+  width: 100%;
+}
+
+.flex-third {
+  align-items: center;
+  background: lightsalmon;
+  display: flex;
+  flex: 1;
+  height: 100%;
+  justify-content: center;
+  width: 100%;
+}
+/*#endregion /Flex  */
+
+/*#region Grid */
+.grid-container {
+  display: grid;
+  grid-template-areas: "first second third";
+  height: 50vh;
+  min-height: 50vh;
+  margin: 1rem 0;
+  width: 100%;
+}
+
+.grid-first {
+  background: #d62828;
+  display: grid;
+  grid-area: first;
+  place-items: center;
+}
+
+.grid-second {
+  background: #f77f00;
+  display: grid;
+  grid-area: second;
+  place-items: center;
+}
+
+.grid-third {
+  background: #fcbf49;
+  display: grid;
+  grid-area: third;
+  place-items: center;
+}
+/*#endregion /Grid */

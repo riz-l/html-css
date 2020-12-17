@@ -1,0 +1,72 @@
+/*#region Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  margin: 1rem;
+}
+
+p {
+  font-size: 2rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+/*#endregion /Reset */
+
+/*#region Flex  */
+.flex-container {
+  height: 50vh;
+  min-height: 50vh;
+  margin: 1rem 0;
+  width: 100%;
+
+  /* ... */
+  /* BEGIN CODE HERE */
+}
+
+.flex-first {
+  /* ... */
+  /* BEGIN CODE HERE */
+}
+
+.flex-second {
+  /* ... */
+  /* BEGIN CODE HERE */
+}
+
+.flex-third {
+  /* ... */
+  /* BEGIN CODE HERE */
+}
+/*#endregion /Flex  */
+
+/*#region Grid */
+.grid-container {
+  height: 50vh;
+  min-height: 50vh;
+  margin: 1rem 0;
+  width: 100%;
+
+  /* ... */
+  /* BEGIN CODE HERE */
+}
+
+.grid-first {
+  /* ... */
+  /* BEGIN CODE HERE */
+}
+
+.grid-second {
+  /* ... */
+  /* BEGIN CODE HERE */
+}
+
+.grid-third {
+  /* ... */
+  /* BEGIN CODE HERE */
+}
+/*#endregion /Grid */

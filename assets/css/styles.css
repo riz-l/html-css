@@ -26,21 +26,74 @@ p {
 
   /* ... */
   /* BEGIN CODE HERE */
+  display: flex;
+  flex-direction: row;
+  /* Flex-direction */
+  flex-wrap: nowrap;
+  /* Flex direction and flex wrap can be combined as flex-flow */
+  justify-content: flex-start;
+  /* Justify content aligns the flex items based on the flex direction (the main axis). The options are 
+  "centre"
+  "flex-start" = At the beginning of the flex container (The default).
+  "flex-end" = At the end of the flex container.
+  space-around = Adds an space around each item including at the margins of the container.
+  "space-between"= Adds space around each item but not at the sides that touch the flex container)  */
+  align-items: stretch;
+  /* Align-items is used to align the items on the opposite axis to the flex direction (the cross axis). (e.g. if flex-direction is row then the align itesm attribute aligns itesm by the vertical axis). The options are:
+  flex-start
+  centre
+  flex-end
+  stretch (the default). 
+  Baseline. which aligns by the baseline of the text whch if it is different sizes causes the items to be aligned to the baseline of the largest font in the flex items.   */
+  align-content: stretch;
+  /* Align-content aligns the flex lines on the cross axis. It only has an effect when there are multiple lines whcih means flex-wrap must be set to wrap. 
+  There flex container also needs to have a hight greater than the flex itesm height so there is empty space needed for the styling to be displayed.
+  
+  The options are: 
+  space-between = creates a top/bottom margin around the flex items except where the flex items touch the top and bottom of the flex-container. 
+  space-around =  creates a margin at the top and bottom of the flex items including at the point where the flex items touch the top and bottom of the flex container. 
+  Stretch = (the default) causes the height of the flex items to stretch their height to that of the flex container. 
+  Centre = The flex items appear in the centre (verticaly) of the flex conatiner and expand outwards from there. 
+  flex-start = 
+  flex-end = 
+   */
 }
-
+@media screen and (max-width: 880px) {
+  .flex-container {
+    flex-direction: column;
+    /* Flex-direction changed to column when screen width drops to below 880 pixels. */
+  }
+}
 .flex-first {
   /* ... */
   /* BEGIN CODE HERE */
+  flex: 1;
+  /*setting flex to 1 means this items takes up 1 part for the flex container. If all flex items are 1 then they will take up an equal width of the flex container.  */
+  background-color: pink;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* used the display, align-items and justify content attributes to centre P element which becoes a flex item.*/
 }
 
 .flex-second {
   /* ... */
   /* BEGIN CODE HERE */
+  flex: 1;
+  background-color: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .flex-third {
   /* ... */
   /* BEGIN CODE HERE */
+  flex: 1;
+  background-color: green;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 /*#endregion /Flex  */
 

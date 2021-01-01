@@ -106,20 +106,40 @@ p {
 
   /* ... */
   /* BEGIN CODE HERE */
+  display: grid;
+  grid-template-columns: 33.33% 33.33% 33.33%;
+  text-align: center;
+}
+@media screen and (max-width: 880px) {
+  .grid-container {
+    grid-template-columns: 100%;
+  }
 }
 
 .grid-first {
   /* ... */
   /* BEGIN CODE HERE */
+  background-color: blueviolet;
+  display: grid;
+  justify-content: center;
+  align-items: center;
 }
 
 .grid-second {
   /* ... */
   /* BEGIN CODE HERE */
+  background-color: chartreuse;
+  display: grid;
+  justify-content: center;
+  align-items: center;
 }
 
 .grid-third {
   /* ... */
   /* BEGIN CODE HERE */
+  background-color: orange;
+  display: grid;
+  justify-content: center;
+  align-items: center;
 }
 /*#endregion /Grid */
